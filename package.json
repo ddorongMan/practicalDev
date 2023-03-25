@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npx babel -d ./lib ./src/companyInfo.js ",
-    "start": "node ./lib/companyInfo.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "author": "",
   "license": "ISC",
@@ -14,10 +15,15 @@
     "axios": "^1.2.2",
     "babel": "^6.23.0",
     "core-js": "^3.27.1",
+    "fs": "^0.0.1-security",
     "iconv-lite": "^0.6.3",
-    "node-html-parser": "^6.1.4",
+    "next": "^13.2.4",
+    "node-html-parser": "^6.1.5",
     "openai": "^3.1.0",
-    "openapi": "^1.0.1"
+    "openapi": "^1.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "swr": "^2.1.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.20.7",
