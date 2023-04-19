@@ -18,11 +18,17 @@ function HomePage(){
     }
 
     return (
-        <div>
-            {Object.keys(data.body.per).map((el)=>(
-                <div>{el} : {data.body.per[el]}배 : {data.body.stock[el]}원</div>
-            ))}
-        </div>
+        <>
+            <div>
+                {Object.keys(data.body.per).map((el)=>(
+                    <div>{el} : {data.body.per[el]}배 : {data.body.stock[el]}원</div>
+                ))}
+            </div>
+            <button onClick={()=>{
+                axios.put('/api/save',data.body).then((res)=>res.data);
+
+            }}>Click</button>
+        </>
     )
 
 }
