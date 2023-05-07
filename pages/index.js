@@ -42,7 +42,7 @@ function HomePage(){
                 ))}
             </div>
             <div>
-                {answer} {answer=="각 업체에 대한 분석 자료를 만드는 중입니다."?dots:""}
+                {answer} {answer=="오늘 서울 날씨를 확인하는 중입니다."?dots:""}
             </div>
             <button onClick={()=>{
                 axios.put('/api/save',data.body).then((res)=>
