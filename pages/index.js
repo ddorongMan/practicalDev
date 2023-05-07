@@ -7,7 +7,7 @@ const fetcher = (url) => axios.get(url).then((res)=>res.data);
 function HomePage(){
 
     const {data, error, isLoading} = useSwr('/api/init',fetcher);
-    const [answer, setAns] = useState("각 업체에 대한 분석 자료를 만드는 중입니다.");
+    const [answer, setAns] = useState("오늘 서울 날씨를 확인하는 중입니다.");
     const [dots, setDots] = useState(".");
 
     useEffect(()=>{

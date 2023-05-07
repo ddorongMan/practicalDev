@@ -10,7 +10,7 @@ export default async function handler(request, response){
             headers: {"Content-Type":"application/json", "Authorization": auth},
             data: {
                 "model": "text-davinci-003",
-                "prompt": Object.keys(JSON.parse(request.body.data).body.per)+"의 각 업체별 현재 상황을 요약해서 알려줄래?",
+                "prompt": "오늘 서울 날씨는 어떻니?",
                 "temperature": 0,
                 "max_tokens": 2000
             }
