@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-let auth = "Bearer " + "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";
+let auth = "Bearer " + process.env.API_KEY;
 
 export default async function handler(request, response){
     try{
@@ -19,5 +19,6 @@ export default async function handler(request, response){
         });
     }catch(e){
         console.log(e.code);
+        console.log(e);
     }
 }
